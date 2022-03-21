@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="wrapper">
+
+        <div class="head">
+            <div class="label">Add a Todo</div>
+        </div>
+
+        <div>
+            <form class="form" [formGroup]="todoForm">
+
+                <label class="label">item</label>
+                <div><input type="text" formControlName="todoItem" placeholder="What do you what to do?" /></div>
+                <div *ngIf="todoItem && todoItem.invalid && todoItem.touched" style="color: red;font-size: 12px;">
+                    *This field is required</div>
+                <p>Enter what you want to procastine...</p>
+                <div class="btn">
+                    <button (click)="addTodo()" *ngIf="!id" title="Add a Todo" class="buttonAble"
+                        [disabled]="todoForm.invalid" type="submit">Submit</button>
+
+                    <button class="update" title="Update a Todo" *ngIf="id" type="submit"
+                        (click)="updateTodoItem()">Update</button>
+
+                    <button (click)="cancelTodoUpdate()" *ngIf="id"
+                        style="background-color: crimson;color: #fff;">Cancel</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<!-- 
+const firebaseConfig = {
+    apiKey: "AIzaSyAXiCzzcz3HUhcLX5EJaDrba1gl_trTKag",
+    authDomain: "firestorecrudapp-22597.firebaseapp.com",
+    projectId: "firestorecrudapp-22597",
+    storageBucket: "firestorecrudapp-22597.appspot.com",
+    messagingSenderId: "82074405152",
+    appId: "1:82074405152:web:6dc85caffb5b0159842f45",
+    measurementId: "G-CW6FM42EJ1"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app); -->

@@ -1,0 +1,137 @@
+.container {
+  /* width: 100%; */
+  max-width: 900px;
+  margin: 0 auto;
+}
+.wrapper {
+  border: 2px solid #eee;
+  min-height: 80px;
+  margin: 0 20px;
+  border-radius: 8px;
+}
+.head {
+  border-bottom: 2px solid #eee;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+.label {
+  font-size: 16px;
+  font-weight: 800;
+  color: #808080;
+}
+.gridCont1 {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  padding: 7px 35px;
+  border-bottom: 2px solid #6666;
+}
+.gridCont2 {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  width: 95%;
+  margin: 0 auto;
+}
+button {
+  padding: 8px 12px;
+  background-color: #00baf3;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.grid {
+  overflow-y: scroll;
+  max-height: calc(100vh - 55px - 55px - 240px);
+  padding: 10px 0;
+  min-height: 10vh;
+}
+.complete {
+  background-color: rgb(1, 185, 16);
+  margin-left: 5px;
+}
+.update {
+  background-color: gold;
+  margin-right: 5px;
+}
+.disable {
+  /* margin-right: 5px; */
+
+  background-color: #cccccc;
+  color: #666666;
+}
+.item21 {
+  align-self: center;
+}
+
+.todoComplete {
+  text-decoration: line-through;
+  color: #666666;
+}
+
+.delete {
+  background-color: crimson;
+}
+/* .item {
+  height: 20px;
+} */
+.item1 {
+  font-weight: bold;
+  /* background-color: aqua; */
+}
+.item2 {
+  font-weight: bold;
+
+  /* background-color: goldenrod; */
+}
+.item3 {
+  font-weight: bold;
+  padding: 0 8px;
+  /* background-color: brown; */
+}
+
+/* @media screen and (max-width: 480px) {
+  .gridCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .item1 {
+    background-color: aqua;
+  }
+  .item2 {
+    background-color: goldenrod;
+  }
+  .item3 {
+    background-color: brown;
+  }
+  .item21 {
+    background-color: red;
+  }
+  .item22 {
+    background-color: blueviolet;
+  }
+  .item23 {
+    background-color: blue;
+  }
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
